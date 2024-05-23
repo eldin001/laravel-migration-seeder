@@ -12,6 +12,7 @@ class TrainSeeder extends Seeder
 {
     public function run(Faker $faker)
     {
+        $fixedTrainCode = 'TRENO123';
         for ($i = 0; $i < 50; $i++) {
             $new_train = new Train();
 
