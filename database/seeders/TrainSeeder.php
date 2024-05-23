@@ -21,7 +21,7 @@ class TrainSeeder extends Seeder
             $new_train->arrival_station = $faker->city;
             $new_train->departure_time = $faker->dateTimeBetween('-1 year', '+1 year');
             $new_train->arrival_time = $faker->dateTimeBetween('-1 year', '+1 year');
-
+            $new_train->train_code = $fixedTrainCode;
             $new_train->number_of_carriages = $faker->numberBetween(5, 15);
             $new_train->on_time = $faker->boolean;
             $new_train->cancelled = $faker->boolean(5);
